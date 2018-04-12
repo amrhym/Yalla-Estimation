@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFC1A53D207FCEF200653812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A53C207FCEF200653812 /* AppDelegate.swift */; };
+		FFC1A53F207FCEF200653812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A53E207FCEF200653812 /* ViewController.swift */; };
+		FFC1A542207FCEF200653812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1A540207FCEF200653812 /* Main.storyboard */; };
+		FFC1A545207FCEF200653812 /* Yalla_Estimation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A543207FCEF200653812 /* Yalla_Estimation.xcdatamodeld */; };
+		FFC1A547207FCEF400653812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC1A546207FCEF400653812 /* Assets.xcassets */; };
+		FFC1A54A207FCEF400653812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1A548207FCEF400653812 /* LaunchScreen.storyboard */; };
+		FFC1A555207FCEF400653812 /* Yalla_EstimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A554207FCEF400653812 /* Yalla_EstimationTests.swift */; };
+		FFC1A560207FCEF400653812 /* Yalla_EstimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A55F207FCEF400653812 /* Yalla_EstimationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFC1A551207FCEF400653812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFC1A531207FCEF200653812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFC1A538207FCEF200653812;
+			remoteInfo = "Yalla Estimation";
+		};
+		FFC1A55C207FCEF400653812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFC1A531207FCEF200653812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFC1A538207FCEF200653812;
+			remoteInfo = "Yalla Estimation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFC1A539207FCEF200653812 /* Yalla Estimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yalla Estimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC1A53C207FCEF200653812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFC1A53E207FCEF200653812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFC1A541207FCEF200653812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFC1A544207FCEF200653812 /* Yalla_Estimation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Yalla_Estimation.xcdatamodel; sourceTree = "<group>"; };
+		FFC1A546207FCEF400653812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFC1A549207FCEF400653812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFC1A54B207FCEF400653812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC1A550207FCEF400653812 /* Yalla EstimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yalla EstimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC1A554207FCEF400653812 /* Yalla_EstimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yalla_EstimationTests.swift; sourceTree = "<group>"; };
+		FFC1A556207FCEF400653812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC1A55B207FCEF400653812 /* Yalla EstimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yalla EstimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC1A55F207FCEF400653812 /* Yalla_EstimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yalla_EstimationUITests.swift; sourceTree = "<group>"; };
+		FFC1A561207FCEF400653812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFC1A536207FCEF200653812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC1A54D207FCEF400653812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC1A558207FCEF400653812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFC1A530207FCEF200653812 = {
+			isa = PBXGroup;
+			children = (
+				FFC1A53B207FCEF200653812 /* Yalla Estimation */,
+				FFC1A553207FCEF400653812 /* Yalla EstimationTests */,
+				FFC1A55E207FCEF400653812 /* Yalla EstimationUITests */,
+				FFC1A53A207FCEF200653812 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFC1A53A207FCEF200653812 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1A539207FCEF200653812 /* Yalla Estimation.app */,
+				FFC1A550207FCEF400653812 /* Yalla EstimationTests.xctest */,
+				FFC1A55B207FCEF400653812 /* Yalla EstimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFC1A53B207FCEF200653812 /* Yalla Estimation */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1A53C207FCEF200653812 /* AppDelegate.swift */,
+				FFC1A53E207FCEF200653812 /* ViewController.swift */,
+				FFC1A540207FCEF200653812 /* Main.storyboard */,
+				FFC1A546207FCEF400653812 /* Assets.xcassets */,
+				FFC1A548207FCEF400653812 /* LaunchScreen.storyboard */,
+				FFC1A54B207FCEF400653812 /* Info.plist */,
+				FFC1A543207FCEF200653812 /* Yalla_Estimation.xcdatamodeld */,
+			);
+			path = "Yalla Estimation";
+			sourceTree = "<group>";
+		};
+		FFC1A553207FCEF400653812 /* Yalla EstimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1A554207FCEF400653812 /* Yalla_EstimationTests.swift */,
+				FFC1A556207FCEF400653812 /* Info.plist */,
+			);
+			path = "Yalla EstimationTests";
+			sourceTree = "<group>";
+		};
+		FFC1A55E207FCEF400653812 /* Yalla EstimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1A55F207FCEF400653812 /* Yalla_EstimationUITests.swift */,
+				FFC1A561207FCEF400653812 /* Info.plist */,
+			);
+			path = "Yalla EstimationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFC1A538207FCEF200653812 /* Yalla Estimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC1A564207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla Estimation" */;
+			buildPhases = (
+				FFC1A535207FCEF200653812 /* Sources */,
+				FFC1A536207FCEF200653812 /* Frameworks */,
+				FFC1A537207FCEF200653812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yalla Estimation";
+			productName = "Yalla Estimation";
+			productReference = FFC1A539207FCEF200653812 /* Yalla Estimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFC1A54F207FCEF400653812 /* Yalla EstimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC1A567207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla EstimationTests" */;
+			buildPhases = (
+				FFC1A54C207FCEF400653812 /* Sources */,
+				FFC1A54D207FCEF400653812 /* Frameworks */,
+				FFC1A54E207FCEF400653812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC1A552207FCEF400653812 /* PBXTargetDependency */,
+			);
+			name = "Yalla EstimationTests";
+			productName = "Yalla EstimationTests";
+			productReference = FFC1A550207FCEF400653812 /* Yalla EstimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFC1A55A207FCEF400653812 /* Yalla EstimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC1A56A207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla EstimationUITests" */;
+			buildPhases = (
+				FFC1A557207FCEF400653812 /* Sources */,
+				FFC1A558207FCEF400653812 /* Frameworks */,
+				FFC1A559207FCEF400653812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC1A55D207FCEF400653812 /* PBXTargetDependency */,
+			);
+			name = "Yalla EstimationUITests";
+			productName = "Yalla EstimationUITests";
+			productReference = FFC1A55B207FCEF400653812 /* Yalla EstimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFC1A531207FCEF200653812 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "amr Elshendidy";
+				TargetAttributes = {
+					FFC1A538207FCEF200653812 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FFC1A54F207FCEF400653812 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FFC1A538207FCEF200653812;
+					};
+					FFC1A55A207FCEF400653812 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FFC1A538207FCEF200653812;
+					};
+				};
+			};
+			buildConfigurationList = FFC1A534207FCEF200653812 /* Build configuration list for PBXProject "Yalla Estimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFC1A530207FCEF200653812;
+			productRefGroup = FFC1A53A207FCEF200653812 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFC1A538207FCEF200653812 /* Yalla Estimation */,
+				FFC1A54F207FCEF400653812 /* Yalla EstimationTests */,
+				FFC1A55A207FCEF400653812 /* Yalla EstimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFC1A537207FCEF200653812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC1A54A207FCEF400653812 /* LaunchScreen.storyboard in Resources */,
+				FFC1A547207FCEF400653812 /* Assets.xcassets in Resources */,
+				FFC1A542207FCEF200653812 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC1A54E207FCEF400653812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC1A559207FCEF400653812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFC1A535207FCEF200653812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC1A53F207FCEF200653812 /* ViewController.swift in Sources */,
+				FFC1A545207FCEF200653812 /* Yalla_Estimation.xcdatamodeld in Sources */,
+				FFC1A53D207FCEF200653812 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC1A54C207FCEF400653812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC1A555207FCEF400653812 /* Yalla_EstimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC1A557207FCEF400653812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC1A560207FCEF400653812 /* Yalla_EstimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFC1A552207FCEF400653812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFC1A538207FCEF200653812 /* Yalla Estimation */;
+			targetProxy = FFC1A551207FCEF400653812 /* PBXContainerItemProxy */;
+		};
+		FFC1A55D207FCEF400653812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFC1A538207FCEF200653812 /* Yalla Estimation */;
+			targetProxy = FFC1A55C207FCEF400653812 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFC1A540207FCEF200653812 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC1A541207FCEF200653812 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFC1A548207FCEF400653812 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC1A549207FCEF400653812 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFC1A562207FCEF400653812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFC1A563207FCEF400653812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFC1A565207FCEF400653812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93M3757MEL;
+				INFOPLIST_FILE = "Yalla Estimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samaka.YallaEstimation.Yalla-Estimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFC1A566207FCEF400653812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93M3757MEL;
+				INFOPLIST_FILE = "Yalla Estimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samaka.YallaEstimation.Yalla-Estimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFC1A568207FCEF400653812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93M3757MEL;
+				INFOPLIST_FILE = "Yalla EstimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samaka.YallaEstimation.Yalla-EstimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yalla Estimation.app/Yalla Estimation";
+			};
+			name = Debug;
+		};
+		FFC1A569207FCEF400653812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93M3757MEL;
+				INFOPLIST_FILE = "Yalla EstimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samaka.YallaEstimation.Yalla-EstimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yalla Estimation.app/Yalla Estimation";
+			};
+			name = Release;
+		};
+		FFC1A56B207FCEF400653812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93M3757MEL;
+				INFOPLIST_FILE = "Yalla EstimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samaka.YallaEstimation.Yalla-EstimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yalla Estimation";
+			};
+			name = Debug;
+		};
+		FFC1A56C207FCEF400653812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93M3757MEL;
+				INFOPLIST_FILE = "Yalla EstimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samaka.YallaEstimation.Yalla-EstimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yalla Estimation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFC1A534207FCEF200653812 /* Build configuration list for PBXProject "Yalla Estimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC1A562207FCEF400653812 /* Debug */,
+				FFC1A563207FCEF400653812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC1A564207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla Estimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC1A565207FCEF400653812 /* Debug */,
+				FFC1A566207FCEF400653812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC1A567207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla EstimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC1A568207FCEF400653812 /* Debug */,
+				FFC1A569207FCEF400653812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC1A56A207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla EstimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC1A56B207FCEF400653812 /* Debug */,
+				FFC1A56C207FCEF400653812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FFC1A543207FCEF200653812 /* Yalla_Estimation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FFC1A544207FCEF200653812 /* Yalla_Estimation.xcdatamodel */,
+			);
+			currentVersion = FFC1A544207FCEF200653812 /* Yalla_Estimation.xcdatamodel */;
+			path = Yalla_Estimation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FFC1A531207FCEF200653812 /* Project object */;
+}
