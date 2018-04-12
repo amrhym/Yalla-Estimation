@@ -99,11 +99,9 @@
 		FFC1A53B207FCEF200653812 /* Yalla Estimation */ = {
 			isa = PBXGroup;
 			children = (
-				FFC1A53C207FCEF200653812 /* AppDelegate.swift */,
-				FFC1A53E207FCEF200653812 /* ViewController.swift */,
-				FFC1A540207FCEF200653812 /* Main.storyboard */,
-				FFC1A546207FCEF400653812 /* Assets.xcassets */,
-				FFC1A548207FCEF400653812 /* LaunchScreen.storyboard */,
+				FFC1A56F207FE54800653812 /* View */,
+				FFC1A56E207FE53F00653812 /* Model */,
+				FFC1A56D207FE51700653812 /* Controler */,
 				FFC1A54B207FCEF400653812 /* Info.plist */,
 				FFC1A543207FCEF200653812 /* Yalla_Estimation.xcdatamodeld */,
 			);
@@ -126,6 +124,32 @@
 				FFC1A561207FCEF400653812 /* Info.plist */,
 			);
 			path = "Yalla EstimationUITests";
+			sourceTree = "<group>";
+		};
+		FFC1A56D207FE51700653812 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1A53C207FCEF200653812 /* AppDelegate.swift */,
+				FFC1A53E207FCEF200653812 /* ViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		FFC1A56E207FE53F00653812 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFC1A56F207FE54800653812 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1A540207FCEF200653812 /* Main.storyboard */,
+				FFC1A546207FCEF400653812 /* Assets.xcassets */,
+				FFC1A548207FCEF400653812 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
