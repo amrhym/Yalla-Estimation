@@ -15,6 +15,10 @@
 		FFC1A54A207FCEF400653812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1A548207FCEF400653812 /* LaunchScreen.storyboard */; };
 		FFC1A555207FCEF400653812 /* Yalla_EstimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A554207FCEF400653812 /* Yalla_EstimationTests.swift */; };
 		FFC1A560207FCEF400653812 /* Yalla_EstimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A55F207FCEF400653812 /* Yalla_EstimationUITests.swift */; };
+		FFC1A571207FF6BB00653812 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A570207FF6BB00653812 /* Card.swift */; };
+		FFC1A573207FF84700653812 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A572207FF84700653812 /* Cards.swift */; };
+		FFC1A575207FFB5700653812 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A574207FFB5700653812 /* User.swift */; };
+		FFC1A577207FFCE200653812 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A576207FFCE200653812 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		FFC1A55B207FCEF400653812 /* Yalla EstimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yalla EstimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC1A55F207FCEF400653812 /* Yalla_EstimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yalla_EstimationUITests.swift; sourceTree = "<group>"; };
 		FFC1A561207FCEF400653812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC1A570207FF6BB00653812 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FFC1A572207FF84700653812 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		FFC1A574207FFB5700653812 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FFC1A576207FFCE200653812 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,10 @@
 		FFC1A56E207FE53F00653812 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FFC1A570207FF6BB00653812 /* Card.swift */,
+				FFC1A572207FF84700653812 /* Cards.swift */,
+				FFC1A574207FFB5700653812 /* User.swift */,
+				FFC1A576207FFCE200653812 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,7 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC1A573207FF84700653812 /* Cards.swift in Sources */,
+				FFC1A575207FFB5700653812 /* User.swift in Sources */,
 				FFC1A53F207FCEF200653812 /* ViewController.swift in Sources */,
+				FFC1A571207FF6BB00653812 /* Card.swift in Sources */,
+				FFC1A577207FFCE200653812 /* Player.swift in Sources */,
 				FFC1A545207FCEF200653812 /* Yalla_Estimation.xcdatamodeld in Sources */,
 				FFC1A53D207FCEF200653812 /* AppDelegate.swift in Sources */,
 			);
