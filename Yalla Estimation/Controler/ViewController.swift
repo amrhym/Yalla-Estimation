@@ -11,8 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     var cards = Cards()
     let players = [Player(),Player(),Player(),Player()]
-    
-    
+    var tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped))
+    var swipGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.imageSwipped))
+    var arreyOfUiView  = [UIImageView]()
     override func viewDidLoad() {
         super.viewDidLoad()
         players[0].Userinfo.UserName = "amr"
@@ -22,20 +23,18 @@ class ViewController: UIViewController {
         
         players[0].Host = true
         DistributeCards()
+        print(players[0].Userinfo.UserName)
         players[0].Cards = sortCards(cards : players[0].Cards )
+        print(players[1].Userinfo.UserName)
         players[1].Cards = sortCards(cards : players[1].Cards )
+        print(players[2].Userinfo.UserName)
         players[2].Cards = sortCards(cards : players[2].Cards )
+        print(players[3].Userinfo.UserName)
         players[3].Cards = sortCards(cards : players[3].Cards )
-//        for i in 0...3 {
-//           // print(players[i].Userinfo.UserName)
-//            for card in players[i].Cards {
-//               // print("\(card.Color) - \(card.Num)")
-//            }
-//        }
-        fillThCards(player: players[0], playerIndex: 0)
-        fillThCards(player: players[1], playerIndex: 1)
-        fillThCards(player: players[2], playerIndex: 2)
-        fillThCards(player: players[3], playerIndex: 3)
+        fillThCards(player: players[0], playerIndex: 3)
+        //        fillThCards(player: players[1], playerIndex: 1)
+        //        fillThCards(player: players[2], playerIndex: 2)
+        //        fillThCards(player: players[3], playerIndex: 3)
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,13 +42,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+ 
+    //MARK: fill The Cards
     func fillThCards(player : Player,playerIndex : Int){
         var playerCards : [Card] = player.Cards
-        
-
-        
         var i : Int = 1
-       playerCards.reverse()
+        playerCards.reverse()
         var yPos = (self.view.frame.height/4)*CGFloat(playerIndex)
         //  print(playerCards.count)
         for card in playerCards{
@@ -74,70 +73,125 @@ class ViewController: UIViewController {
             let image = UIImage(named: imageName)
             let imageView = UIImageView(image: image!)
             if(i <= 7){
-                imageView.frame = CGRect(x: ((self.view.frame.width/13)*CGFloat(i-1)), y: CGFloat(yPos + (self.view.frame.height/8)), width: ((self.view.frame.width/13)+10), height: 80.0)
-//                imageView.frame = CGRect(x: (Int((self.view.frame.width/13))*(i-1)), y: yPos - (3) , width: (Int((self.view.frame.width/13))+10), height: 80)
+                imageView.frame = CGRect(x: ((self.view.frame.width/13)*CGFloat(i-1)), y: CGFloat((yPos-20.0) + (self.view.frame.height/8)), width: ((self.view.frame.width/13)+15), height: 100.0)
                 yPos = yPos - (3)
             }else{
-                 imageView.frame = CGRect(x: ((self.view.frame.width/13)*CGFloat(i-1)), y: CGFloat(yPos+(self.view.frame.height/8)+3), width: ((self.view.frame.width/13)+10), height: 80.0)
-//                imageView.frame = CGRect(x: (Int((self.view.frame.width/13))*(i-1)), y: yPos + (3), width: (Int((self.view.frame.width/13))+5), height: 80)
+                imageView.frame = CGRect(x: ((self.view.frame.width/13)*CGFloat(i-1)), y: CGFloat((yPos-20.0) + (self.view.frame.height/8)+3), width: ((self.view.frame.width/13)+15), height: 100.0)
                 yPos = yPos + (3)
             }
-           // print((playerIndex*13) + i)
+            // print((playerIndex*13) + i)
             imageView.tag = (playerIndex*13) + i
-            //                let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ViewController.imagepanned))
-            //                let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped))
-            let swipGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.imageSwipped))
+            //let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ViewController.imagepanned))
+            tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped))
+            swipGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.imageSwipped))
             swipGestureRecognizer.direction = .up
             imageView.isUserInteractionEnabled = true
-            //               imageView.addGestureRecognizer(tapGestureRecognizer)
-            //                imageView.addGestureRecognizer(panGestureRecognizer)
+            imageView.addGestureRecognizer(tapGestureRecognizer)
+            // imageView.addGestureRecognizer(panGestureRecognizer)
             imageView.addGestureRecognizer(swipGestureRecognizer)
-            //arreyOfUiView.append(imageView)
+            arreyOfUiView.append(imageView)
             view.addSubview(imageView)
             self.view.addSubview(imageView)
             i = i+1
         }
-
-        
-        
-        
     }
-    @objc func imageSwipped(tapGest : UISwipeGestureRecognizer)
+    
+    
+    @objc func imageTapped(tapGest : UITapGestureRecognizer)
     {
-        UIView.animate(withDuration: 1.0){
+        UIView.animate(withDuration: 0.1){
             if let thewindow = UIApplication.shared.keyWindow{
-                tapGest.view?.frame = CGRect(x:thewindow.frame.width - 15,y:thewindow.frame.height - 15 ,width : 10 , height:10)
-                print(thewindow.tag)
+                tapGest.view?.frame = CGRect(x:(tapGest.view?.frame.origin.x)!,y:((tapGest.view?.frame.origin.y)!-15.0),width : (tapGest.view?.frame.width)! , height:(tapGest.view?.frame.height)!)
+                print(tapGest.view?.tag)
+                for view in self.arreyOfUiView {
+                    view.isUserInteractionEnabled = false
+                    if(view.tag == tapGest.view?.tag){
+                        view.gestureRecognizers?.removeAll()
+                        self.swipGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.imageSwipped))
+                        self.swipGestureRecognizer.direction = .up
+                        view.addGestureRecognizer(self.swipGestureRecognizer)
+                        view.isUserInteractionEnabled = true
+                    }
+                }
                 
-                // thewindow.image = nil
-                //thewindow.isHidden = true
             }
         }
-        
-        
     }
-    func sortCards(cards : [Card]) ->[Card]{
+    
+    @objc func imageSwipped(tapGest : UISwipeGestureRecognizer)
+    {
+        UIView.animate(withDuration: 0.3){
+            if let thewindow = UIApplication.shared.keyWindow{
+                //                for view in self.arreyOfUiView {
+                //                    if(view.image == UIImage(named: "six-H-1")){
+                //                        view.frame = CGRect(x:thewindow.frame.width/2,y:thewindow.frame.height/2 ,width : (tapGest.view?.frame.width)! , height:(tapGest.view?.frame.height)!)
+                //                    }
+                //                }
+                tapGest.view?.frame = CGRect(x:thewindow.frame.width/2,y:thewindow.frame.height/2 ,width : (tapGest.view?.frame.width)! , height:(tapGest.view?.frame.height)!)
+                print(tapGest.view?.tag)
+                for view in self.arreyOfUiView {
+                    view.isUserInteractionEnabled = true
+                    if(view.tag == tapGest.view?.tag){
+                        
+                        view.isUserInteractionEnabled = false
+                    }
+                }
+                
+                
+            }
+        }
+    }
+    //MARK: calculate the call
+    func calculateCall(cards : [Card]) -> Int{
         var SpadeCards = [Card]()
-         var HeartCards = [Card]()
-         var ClubCards = [Card]()
-         var DiamondCards = [Card]()
+        var HeartCards = [Card]()
+        var ClubCards = [Card]()
+        var DiamondCards = [Card]()
         var pCards = [Card]()
         for card in cards {
             switch (card.Color){
             case "spade" :
-            SpadeCards.append(card)
-            break
+                SpadeCards.append(card)
+                break
             case "heart" :
-            HeartCards.append(card)
-            break
+                HeartCards.append(card)
+                break
             case "diamond" :
-             DiamondCards.append(card)
-            break
+                DiamondCards.append(card)
+                break
             case "club" :
-             ClubCards.append(card)
-            break
+                ClubCards.append(card)
+                break
             default:
-            break
+                break
+            }
+        }
+        
+        return 0 
+    }
+    //MARK: Sort the Distributed Cards
+    func sortCards(cards : [Card]) ->[Card]{
+        var SpadeCards = [Card]()
+        var HeartCards = [Card]()
+        var ClubCards = [Card]()
+        var DiamondCards = [Card]()
+        var pCards = [Card]()
+        for card in cards {
+            switch (card.Color){
+            case "spade" :
+                SpadeCards.append(card)
+                break
+            case "heart" :
+                HeartCards.append(card)
+                break
+            case "diamond" :
+                DiamondCards.append(card)
+                break
+            case "club" :
+                ClubCards.append(card)
+                break
+            default:
+                break
             }
         }
         for card in SpadeCards.sorted(by: { (Card1, Card2) -> Bool in
@@ -160,9 +214,13 @@ class ViewController: UIViewController {
         }){
             pCards.append(card)
         }
-       return  pCards
+        for card in pCards{
+            print(card.ImageName)
+        }
+        return  pCards
     }
     
+    //MARK: Distribute the Cards
     func DistributeCards() {
         var roundCards = cards
         var y = 0
@@ -179,35 +237,9 @@ class ViewController: UIViewController {
             roundCards.list.remove(at: randomIndex)
         }
     }
-    @IBAction func roll(_ sender: Any) {
-        cards = Cards()
-        players[0].Userinfo.UserName = "amr"
-        players[1].Userinfo.UserName = "sheko"
-        players[2].Userinfo.UserName = "ahmed"
-        players[3].Userinfo.UserName = "mohamed"
-        players[0].Cards = [Card]()
-        players[1].Cards = [Card]()
-        players[2].Cards = [Card]()
-        players[3].Cards = [Card]()
-        players[0].Host = true
-        DistributeCards()
-        players[0].Cards = sortCards(cards : players[0].Cards )
-        players[1].Cards = sortCards(cards : players[1].Cards )
-        players[2].Cards = sortCards(cards : players[2].Cards )
-        players[3].Cards = sortCards(cards : players[3].Cards )
-        for i in 0...3 {
-            print(players[i].Userinfo.UserName)
-            for card in players[i].Cards {
-                print("\(card.Color) - \(card.Num)")
-            }
-        }
-        fillThCards(player: players[0], playerIndex: 0)
-        fillThCards(player: players[1], playerIndex: 1)
-        fillThCards(player: players[2], playerIndex: 2)
-        fillThCards(player: players[3], playerIndex: 3)
-    }
     
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        print(UIDevice.current.orientation.isLandscape)
-    }
+    
+    
+    
+    
 }
