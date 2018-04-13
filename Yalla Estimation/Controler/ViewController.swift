@@ -26,12 +26,12 @@ class ViewController: UIViewController {
         players[1].Cards = sortCards(cards : players[1].Cards )
         players[2].Cards = sortCards(cards : players[2].Cards )
         players[3].Cards = sortCards(cards : players[3].Cards )
-        for i in 0...3 {
-            print(players[i].Userinfo.UserName)
-            for card in players[i].Cards {
-                print("\(card.Color) - \(card.Num)")
-            }
-        }
+//        for i in 0...3 {
+//           // print(players[i].Userinfo.UserName)
+//            for card in players[i].Cards {
+//               // print("\(card.Color) - \(card.Num)")
+//            }
+//        }
         fillThCards(player: players[0], playerIndex: 0)
         fillThCards(player: players[1], playerIndex: 1)
         fillThCards(player: players[2], playerIndex: 2)
@@ -74,11 +74,11 @@ class ViewController: UIViewController {
             let image = UIImage(named: imageName)
             let imageView = UIImageView(image: image!)
             if(i <= 7){
-                imageView.frame = CGRect(x: ((self.view.frame.width/13)*CGFloat(i-1)), y: CGFloat(yPos-3 ), width: ((self.view.frame.width/13)+10), height: 80.0)
+                imageView.frame = CGRect(x: ((self.view.frame.width/13)*CGFloat(i-1)), y: CGFloat(yPos + (self.view.frame.height/8)), width: ((self.view.frame.width/13)+10), height: 80.0)
 //                imageView.frame = CGRect(x: (Int((self.view.frame.width/13))*(i-1)), y: yPos - (3) , width: (Int((self.view.frame.width/13))+10), height: 80)
                 yPos = yPos - (3)
             }else{
-                 imageView.frame = CGRect(x: ((self.view.frame.width/13)*CGFloat(i-1)), y: CGFloat(yPos+3), width: ((self.view.frame.width/13)+10), height: 80.0)
+                 imageView.frame = CGRect(x: ((self.view.frame.width/13)*CGFloat(i-1)), y: CGFloat(yPos+(self.view.frame.height/8)+3), width: ((self.view.frame.width/13)+10), height: 80.0)
 //                imageView.frame = CGRect(x: (Int((self.view.frame.width/13))*(i-1)), y: yPos + (3), width: (Int((self.view.frame.width/13))+5), height: 80)
                 yPos = yPos + (3)
             }
@@ -169,7 +169,9 @@ class ViewController: UIViewController {
         
         while(roundCards.list.count > 0){
             let randomIndex = Int(arc4random_uniform(UInt32(roundCards.list.count-1)))
+            
             players[y].Cards.append(roundCards.list[randomIndex])
+            print(roundCards.list[randomIndex].ImageName)
             y = y + 1
             if y == 4{
                 y = 0
