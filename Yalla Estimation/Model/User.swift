@@ -7,12 +7,15 @@
 //
 
 import Foundation
-class User {
-    var UserName : String = ""
-    init() {
-    }
-    convenience init(userName : String){
-        self.init()
-        UserName = userName
-    }
+import RealmSwift
+class User : Object{
+    @objc dynamic var UserName : String = ""
+    @objc dynamic var Id : Int = 0
+//    init() {
+//    }
+//    convenience init(userName : String , id : Int){
+//        self.init()
+//        UserName = userName
+//        Id = id
+//    }
 }

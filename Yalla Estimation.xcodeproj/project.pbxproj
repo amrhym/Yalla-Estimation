@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CB1516818049EB3F068D912 /* Pods_Yalla_Estimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1922B67863EE7948EC816FB8 /* Pods_Yalla_Estimation.framework */; };
+		1F2D89809820EECC3EEDA8F1 /* Pods_Yalla_EstimationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C839E8546D7F519ECC79B7B4 /* Pods_Yalla_EstimationUITests.framework */; };
+		A298742753BFB524B865C03A /* Pods_Yalla_EstimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86693A19EA3242E8695DA92D /* Pods_Yalla_EstimationTests.framework */; };
+		FF1F5C42208114CD00AB1E32 /* CardPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F5C41208114CD00AB1E32 /* CardPower.swift */; };
+		FF1F5C4420814B6400AB1E32 /* CardCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F5C4320814B6400AB1E32 /* CardCalculation.swift */; };
+		FF1F5C4620822D6700AB1E32 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F5C4520822D6700AB1E32 /* Round.swift */; };
+		FF1F5C482082329300AB1E32 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F5C472082329300AB1E32 /* Game.swift */; };
+		FF1F5C4A20823E2100AB1E32 /* Trick.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F5C4920823E2100AB1E32 /* Trick.swift */; };
+		FF72EA542082A0EA00D2B5C4 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72EA532082A0EA00D2B5C4 /* Call.swift */; };
+		FF72EA562083CAC000D2B5C4 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72EA552083CAC000D2B5C4 /* PlayerCard.swift */; };
 		FFC1A53D207FCEF200653812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A53C207FCEF200653812 /* AppDelegate.swift */; };
 		FFC1A53F207FCEF200653812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1A53E207FCEF200653812 /* ViewController.swift */; };
 		FFC1A542207FCEF200653812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1A540207FCEF200653812 /* Main.storyboard */; };
@@ -39,6 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1922B67863EE7948EC816FB8 /* Pods_Yalla_Estimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yalla_Estimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		208F84A6AA6A2D823820241B /* Pods-Yalla EstimationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla EstimationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yalla EstimationUITests/Pods-Yalla EstimationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		284DA6FDE64936F163D8DA8B /* Pods-Yalla EstimationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla EstimationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yalla EstimationUITests/Pods-Yalla EstimationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		31AC1849828DBB3D3080C945 /* Pods-Yalla Estimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla Estimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yalla Estimation/Pods-Yalla Estimation.debug.xcconfig"; sourceTree = "<group>"; };
+		86693A19EA3242E8695DA92D /* Pods_Yalla_EstimationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yalla_EstimationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4704CB33EFB340DB8D164C7 /* Pods-Yalla Estimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla Estimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yalla Estimation/Pods-Yalla Estimation.release.xcconfig"; sourceTree = "<group>"; };
+		C839E8546D7F519ECC79B7B4 /* Pods_Yalla_EstimationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yalla_EstimationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3593A17CC08FB5F5927548 /* Pods-Yalla EstimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla EstimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yalla EstimationTests/Pods-Yalla EstimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6B8B075BA01FF44EA84A906 /* Pods-Yalla EstimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yalla EstimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yalla EstimationTests/Pods-Yalla EstimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF1F5C41208114CD00AB1E32 /* CardPower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPower.swift; sourceTree = "<group>"; };
+		FF1F5C4320814B6400AB1E32 /* CardCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCalculation.swift; sourceTree = "<group>"; };
+		FF1F5C4520822D6700AB1E32 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		FF1F5C472082329300AB1E32 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FF1F5C4920823E2100AB1E32 /* Trick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trick.swift; sourceTree = "<group>"; };
+		FF72EA532082A0EA00D2B5C4 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		FF72EA552083CAC000D2B5C4 /* PlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
 		FFC1A539207FCEF200653812 /* Yalla Estimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yalla Estimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC1A53C207FCEF200653812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC1A53E207FCEF200653812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB1516818049EB3F068D912 /* Pods_Yalla_Estimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A298742753BFB524B865C03A /* Pods_Yalla_EstimationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2D89809820EECC3EEDA8F1 /* Pods_Yalla_EstimationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF6B6FF81392C44ECF9AEE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31AC1849828DBB3D3080C945 /* Pods-Yalla Estimation.debug.xcconfig */,
+				A4704CB33EFB340DB8D164C7 /* Pods-Yalla Estimation.release.xcconfig */,
+				EF3593A17CC08FB5F5927548 /* Pods-Yalla EstimationTests.debug.xcconfig */,
+				F6B8B075BA01FF44EA84A906 /* Pods-Yalla EstimationTests.release.xcconfig */,
+				284DA6FDE64936F163D8DA8B /* Pods-Yalla EstimationUITests.debug.xcconfig */,
+				208F84A6AA6A2D823820241B /* Pods-Yalla EstimationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5EA56B0E01CA8FF05492B6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1922B67863EE7948EC816FB8 /* Pods_Yalla_Estimation.framework */,
+				86693A19EA3242E8695DA92D /* Pods_Yalla_EstimationTests.framework */,
+				C839E8546D7F519ECC79B7B4 /* Pods_Yalla_EstimationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FFC1A530207FCEF200653812 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +143,8 @@
 				FFC1A553207FCEF400653812 /* Yalla EstimationTests */,
 				FFC1A55E207FCEF400653812 /* Yalla EstimationUITests */,
 				FFC1A53A207FCEF200653812 /* Products */,
+				0BF6B6FF81392C44ECF9AEE0 /* Pods */,
+				B5EA56B0E01CA8FF05492B6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +204,13 @@
 				FFC1A572207FF84700653812 /* Cards.swift */,
 				FFC1A574207FFB5700653812 /* User.swift */,
 				FFC1A576207FFCE200653812 /* Player.swift */,
+				FF1F5C41208114CD00AB1E32 /* CardPower.swift */,
+				FF1F5C4320814B6400AB1E32 /* CardCalculation.swift */,
+				FF1F5C4520822D6700AB1E32 /* Round.swift */,
+				FF1F5C472082329300AB1E32 /* Game.swift */,
+				FF1F5C4920823E2100AB1E32 /* Trick.swift */,
+				FF72EA532082A0EA00D2B5C4 /* Call.swift */,
+				FF72EA552083CAC000D2B5C4 /* PlayerCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC1A564207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla Estimation" */;
 			buildPhases = (
+				22B84592176D524117A55AA8 /* [CP] Check Pods Manifest.lock */,
 				FFC1A535207FCEF200653812 /* Sources */,
 				FFC1A536207FCEF200653812 /* Frameworks */,
 				FFC1A537207FCEF200653812 /* Resources */,
+				19B1D967DC43ACD4F3D932FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC1A567207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla EstimationTests" */;
 			buildPhases = (
+				79E9D95AF99D7D637F546E04 /* [CP] Check Pods Manifest.lock */,
 				FFC1A54C207FCEF400653812 /* Sources */,
 				FFC1A54D207FCEF400653812 /* Frameworks */,
 				FFC1A54E207FCEF400653812 /* Resources */,
@@ -206,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC1A56A207FCEF400653812 /* Build configuration list for PBXNativeTarget "Yalla EstimationUITests" */;
 			buildPhases = (
+				D8795ED5E92B55D341B80D44 /* [CP] Check Pods Manifest.lock */,
 				FFC1A557207FCEF400653812 /* Sources */,
 				FFC1A558207FCEF400653812 /* Frameworks */,
 				FFC1A559207FCEF400653812 /* Resources */,
@@ -290,18 +355,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19B1D967DC43ACD4F3D932FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yalla Estimation/Pods-Yalla Estimation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yalla Estimation/Pods-Yalla Estimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22B84592176D524117A55AA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yalla Estimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E9D95AF99D7D637F546E04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yalla EstimationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8795ED5E92B55D341B80D44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yalla EstimationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FFC1A535207FCEF200653812 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FFC1A573207FF84700653812 /* Cards.swift in Sources */,
+				FF1F5C42208114CD00AB1E32 /* CardPower.swift in Sources */,
 				FFC1A575207FFB5700653812 /* User.swift in Sources */,
 				FFC1A53F207FCEF200653812 /* ViewController.swift in Sources */,
+				FF72EA542082A0EA00D2B5C4 /* Call.swift in Sources */,
 				FFC1A571207FF6BB00653812 /* Card.swift in Sources */,
 				FFC1A577207FFCE200653812 /* Player.swift in Sources */,
+				FF1F5C482082329300AB1E32 /* Game.swift in Sources */,
+				FF1F5C4A20823E2100AB1E32 /* Trick.swift in Sources */,
 				FFC1A545207FCEF200653812 /* Yalla_Estimation.xcdatamodeld in Sources */,
+				FF72EA562083CAC000D2B5C4 /* PlayerCard.swift in Sources */,
 				FFC1A53D207FCEF200653812 /* AppDelegate.swift in Sources */,
+				FF1F5C4620822D6700AB1E32 /* Round.swift in Sources */,
+				FF1F5C4420814B6400AB1E32 /* CardCalculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -461,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -472,6 +625,7 @@
 		};
 		FFC1A565207FCEF400653812 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AC1849828DBB3D3080C945 /* Pods-Yalla Estimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +644,7 @@
 		};
 		FFC1A566207FCEF400653812 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4704CB33EFB340DB8D164C7 /* Pods-Yalla Estimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +663,7 @@
 		};
 		FFC1A568207FCEF400653812 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3593A17CC08FB5F5927548 /* Pods-Yalla EstimationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -529,6 +685,7 @@
 		};
 		FFC1A569207FCEF400653812 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B8B075BA01FF44EA84A906 /* Pods-Yalla EstimationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +707,7 @@
 		};
 		FFC1A56B207FCEF400653812 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284DA6FDE64936F163D8DA8B /* Pods-Yalla EstimationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,6 +728,7 @@
 		};
 		FFC1A56C207FCEF400653812 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208F84A6AA6A2D823820241B /* Pods-Yalla EstimationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

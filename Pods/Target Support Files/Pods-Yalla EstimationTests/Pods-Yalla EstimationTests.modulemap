@@ -1,0 +1,6 @@
+framework module Pods_Yalla_EstimationTests {
+  umbrella header "Pods-Yalla EstimationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

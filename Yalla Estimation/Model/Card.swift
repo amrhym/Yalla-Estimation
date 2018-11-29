@@ -8,13 +8,16 @@
 
 import Foundation
 class Card {
-    let Id : Int
-    let Color : String
-    let Num : String
-    let Value : Int
-    let ImageName : String
-    
-    init(id : Int , color : String, num : String , value : Int , imageName : String ) {
+    var Id : Int = 0
+    var Color : String = ""
+    var Num : String = ""
+    var Value : Int = 0
+    var ImageName : String = ""
+    init() {
+        
+    }
+    convenience init(id : Int , color : String, num : String , value : Int , imageName : String ) {
+       self.init()
         Id = id
         Color = color
         Num = num
